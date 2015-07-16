@@ -1,0 +1,28 @@
+# Pr3_Glazunova_lab3
+<!DOCTYPE html> 
+<html> 
+<head>
+<script src="http://code.jquery.com/jquery-latest.js">
+</script> 
+
+<script> 
+$(document).ready(function () {  
+$("input").keypress(function (event) {
+
+
+var  max = 430;
+var  min = 0;
+var r= Math.floor(Math.random() * (max - min + 1)) + min;;
+var g= Math.floor(Math.random() * (max - min + 1)) + min;;
+var b= Math.floor(Math.random() * (max - min + 1)) + min;;
+var ccolor = "rgb("+ r + "," + g + "," + b +")";
+ $("input").css("background-color", ccolor);  
+});  
+});
+</script>
+
+</head> 
+
+<body>  
+<input type=string name=text>
+</body> 
