@@ -1,0 +1,33 @@
+# Pr3_Glazunova_lab3
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<script src="http://code.jquery.com/jquery-latest.js">
+</script>  
+<script>
+$(document).ready(function () { 
+
+$("#but1").click(function () { 
+$(".MsoNormal:even").hide();         
+});  
+
+$("#but2").click(function () {
+$(".MsoNormal:even").show();         
+}); 
+
+});
+</script> 
+
+</head>  
+<body>
+
+<p class="MsoNormal">11</p> 
+<p class="MsoNormal">12</p> 
+<p class="MsoNormal">13</p>
+<p class="MsoNormal">14</p>
+<button id="but1">Скрыть</button> 
+<button id="but2">Показать</button>
+  
+</body>  
+</html> 
