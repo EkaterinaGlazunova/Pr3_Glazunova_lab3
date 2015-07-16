@@ -1,0 +1,25 @@
+# Pr3_Glazunova_lab3
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js">
+</script>
+
+<script>
+$(document).ready(function () {
+$("p[align|='center']").dblclick(function () {
+$("p").hide(1100);
+});
+$("#but1").dblclick(function () {
+$("p").show(1100);
+});
+});
+</script>
+
+</head>
+<body>
+<button id="but1">Нажимай</button>
+<p align="center">Нажми скорее!</p>
+
+</body>
+</html>
