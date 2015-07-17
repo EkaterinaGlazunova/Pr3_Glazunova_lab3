@@ -1,0 +1,77 @@
+# Pr3_Glazunova_lab3
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+</script>
+<script type="text/javascript">
+
+
+$(document).ready(function () 
+{
+$("#but1").click(function () 
+   {          $("#p1").fadeIn();
+  $("#p1").fadeOut(2000);
+
+ $("#p2").fadeIn(); 
+ $("#p3").fadeIn();
+ $("#p3").fadeOut(2000);
+ $("#p4").fadeIn();
+$("#p5").fadeIn();
+$("#p5").fadeOut(2000);
+$("#p6").fadeIn();
+ $("#p7").fadeIn();
+ $("#p7").fadeOut(2000);
+$("#p8").fadeIn();
+ $("#p9").fadeIn();
+  $("#p9").fadeOut(2000);
+  $("#p10").fadeIn();   
+
+
+
+   });
+$("#but2").click(function () 
+   {
+  
+$("#p1").stop($("#but1").click())
+$("#p3").stop($("#but1").click())
+$("#p5").stop($("#but1").click())
+$("#p7").stop($("#but1").click())
+$("#p9").stop($("#but1").click())
+ $("#p1").fadeOut(2000);
+ $("#p2").fadeOut(2000);
+ $("#p3").fadeOut(2000);
+ $("#p4").fadeOut(2000);
+ $("#p5").fadeOut(2000);
+ $("#p6").fadeOut(2000);
+ $("#p7").fadeOut(2000);
+ $("#p8").fadeOut(2000);
+ $("#p9").fadeOut(2000);
+ $("#p10").fadeOut(2000);
+ $("#p1").fadeIn();
+ $("#p3").fadeIn();
+ $("#p5").fadeIn();
+ $("#p7").fadeIn();
+$("#p9").fadeIn();  
+   });
+});
+</script>
+</head>
+
+<p id="p1" style="display:none;"> 11 </p>
+<p id="p2" style="display:none;"> 12 </p>
+<p id="p3" style="display:none;"> 13</p>
+<p id="p4" style="display:none;"> 14</p>
+<p id="p5" style="display:none;"> 15</p>
+<p id="p6" style="display:none;"> 16</p>
+<p id="p7" style="display:none;"> 17 </p>
+<p id="p8" style="display:none;"> 18</p>
+<p id="p9" style="display:none;"> 19</p>
+<p id="p10" style="display:none;"> 20</p>
+<p></p>
+<button id="but1">Сначало сюда</button>
+<button id="but2">Потом сюда</button>
+
+</body>
+
+</html>
