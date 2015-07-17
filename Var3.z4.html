@@ -1,0 +1,89 @@
+# Pr3_Glazunova_lab3
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+</script>
+<script type="text/javascript">
+
+
+$(document).ready(function () 
+{
+$("#but1").click(function () { 
+   var i=0; 
+		do{ 
+
+ 
+		$('#div1').delay(100); 
+		$('#div2').delay(100); 
+ 		$('#div3').delay(100); 
+ 		$('#div4').delay(100); 
+ 		$('#div5').delay(100); 
+ 
+ 
+ 		if(i==0){ 
+ 		$("#div1").fadeIn();} 
+ 
+ 
+ 		i++;		 
+ 
+ 
+ 		if(i==10){ 
+ 		$("#div2").fadeIn();} 
+ 		 
+ 		if(i==20){ 
+ 		$("#div3").fadeIn();} 
+ 		 
+ 		if(i==30){ 
+ 		$("#div4").fadeIn();} 
+ 		 
+ 		if(i==40){ 
+ 		$("#div5").fadeIn();} 
+ 
+ 
+ 		if(i==50){ 
+ 		$("#div5").fadeOut();} 
+ 
+ 
+ 		if(i==60){ 
+ 		$("#div4").fadeOut();} 
+ 		 
+ 		if(i==70){ 
+ 		$("#div3").fadeOut();} 
+ 		 
+ 		if(i==80){ 
+ 		$("#div2").fadeOut();} 
+ 		 
+ 		if(i==90){ 
+ 		$("#div1").fadeOut(); 
+ 		i=0;} 
+ 
+ 
+ } 
+ 		while(i<50) 
+ 	 
+ 		}); 
+ }); 
+
+</script>
+</head>
+<body>
+
+<div id="div1" style="width:40px;height:40px;display:none;background-color:red;"></div><br>
+
+<div id="div2" style="width:40px;height:40px;display:none;background-color:green;"></div><br>
+
+<div id="div3" style="width:40px;height:40px;display:none;background-color:black;"></div><br>
+
+<div id="div4" style="width:40px;height:40px;display:none;background-color:blue;"></div><br>
+
+<div id="div5" style="width:40px;height:40px;display:none;background-color:grey;"></div><br>
+
+
+
+
+<br></br>
+<button id="but1">Нажать</button>
+</body>
+
+</html>
